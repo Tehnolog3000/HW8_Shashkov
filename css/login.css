@@ -1,0 +1,105 @@
+
+.body--style{
+    margin: 0 auto;
+    width: 500px;
+    height: 656px;
+    background: #ffffff;
+}
+.close--img{
+    margin: 13px 13px 0px 469px;
+}
+.block--1{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 21px;
+    text-align: center; 
+}
+.login--style{
+    color: #3d3d3d"
+}
+.i-class{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.register--style{
+     color: #46a358;
+}
+.text1--style{
+    margin-top: 40px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.form--style{
+    text-align: center;
+    background: #ffffff;
+}
+.input--style{
+    padding-left: 14px;
+    padding-right: 0px;
+    margin-top: 14px;
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box; 
+}
+.btn--style{
+    width: 300px;
+    height: 45px;
+    border-radius: 5px;
+    border: 0px;
+    margin-top: 41px;
+    padding: 0;
+    background-color: #46a358;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #ffffff; 
+}
+.block--2{
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+    justify-content: center;
+    padding: 0 100px; 
+}
+.line--style{
+    flex: 1px;
+    height: 1px;
+    background-color: #eaeaea;
+}
+.text2--style{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 0 10px; 
+}
+.btn-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #eaeaea;
+    margin-top: 27px;
+    margin-left: 100px;
+    background-color: #ffffff;  
+}
+.social--img{
+    width: 20px;
+    height: 20px   
+}
+.span--social{
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 9px 
+}
+.btn-facebook{
+    margin-top: 15px;
+}
+.mini--footer{
+    width: 500px;
+    height: 10px;
+    background: #46a358;
+    margin-top: 40px;  
+}

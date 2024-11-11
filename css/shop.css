@@ -1,0 +1,165 @@
+body{
+    margin-top: 131px;
+    color: #3D3D3D;
+
+}
+
+.container {
+    max-width: 840px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Боковая менюха */
+
+aside{
+background: #FBFBFB;
+
+}
+.sidebar{
+    float: left;
+    margin-left: 135px;
+    margin-right: 50px;
+    max-width: 310px;
+}
+.menu{
+    width: 100%;
+    margin-left: 18px;
+    margin-top: 14px;
+    padding-bottom: 420px;
+    
+}
+
+aside nav h2{
+    padding-bottom: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+}
+
+aside nav li{
+    padding-left: 12px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+
+}
+
+.banner-img{
+    width: 100%;
+}
+
+
+
+/* Главный хедер */
+
+header nav {
+    text-align: right;
+    height: 24px;
+    position: relative;
+    margin-bottom: 31px;    
+}
+
+header nav ul {
+    float: left;
+    display: inline-block;
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+
+
+}
+
+header nav label,
+header nav select {
+    display: inline-block;
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+header nav select{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+}
+/* Контейнер цветочки */
+
+.goods img{
+    background: #FBFBFB;
+    margin: 19px 4px;
+}
+
+
+
+.goods{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 70px 30px;
+    
+}
+
+.product-card{
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-name{
+    padding-top: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+}
+.product-price{
+    padding-top: 6px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    text-align: left;
+    color:#46A358;
+}
+
+.pagination{
+    width: 100%;
+    margin-top: 90px;
+    margin-bottom: 82px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.pagination ul {
+    display: flex;
+}
+
+.pagination li {
+    margin-right: 10px;
+}
+.pagination a {
+    padding: 8px 12px;
+    border: 1px solid  #E5E5E5;
+    color: #333;
+    border-radius: 4px;
+}
+
+.pagination a.active {
+    background-color:#46A358;
+    color:#FFFFFF;
+    border-color: #46A358;
+}
+
+.pagination a:hover {
+    background-color: #e0e0e0;
+}

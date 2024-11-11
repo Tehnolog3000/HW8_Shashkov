@@ -1,0 +1,132 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+nav{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+nav ul li{
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+    margin: 0px 25px;
+   
+}
+nav ul {
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.logo-style{
+    float: left;
+}
+.logo-style img {
+    vertical-align: middle;
+}
+
+.btn-style{
+    float: right;
+}
+
+.style-logout {
+    float: right;
+    width: 100px;
+    height: 35px;
+    border-radius: 6px;
+    background: #46A358;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 30px;
+}
+
+.img-out{ 
+    vertical-align: middle;
+    left: 17px;
+}
+.login{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+}
+
+
+section .container{
+    background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.46%, rgba(245, 245, 245, 0.5) 107.51%);
+    margin-top: 12px;
+    overflow: hidden;
+}
+
+
+section .left-side{
+    display: inline-block;
+    max-width: 55%;
+    padding: 68px 43px;
+}
+section .right-side{
+   float: right;
+   max-width: 45%;
+}
+section .right-side img {
+    display: block; 
+    width: 100%;
+    height: auto;
+}
+
+
+.left-side, .right-side {
+    overflow: hidden;
+}
+
+
+.welcome {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    padding-top: 7px;
+}
+
+.tittle-1 {
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #3D3D3D;
+}
+
+.title-2 {
+    color: #46A358;
+}
+
+.descrip {
+    margin-top: 5px;
+    padding-bottom: 44px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #727272;
+}
+
+.btn-show {
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    border-radius: 6px;
+    background: #46A358;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFFFF;
+}
