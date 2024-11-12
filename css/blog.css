@@ -1,7 +1,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    margin-top: 69px;
+    padding: 69px 0px;
     overflow: hidden;
 }
 .section-1{
@@ -69,6 +69,7 @@
     display: flex;
     justify-content:space-between;
     flex-direction: column;
+    padding-top: 138px;
     align-items: center;
     width: 100%;
 }
@@ -77,8 +78,8 @@
 .section-2{
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    margin-bottom: 68px;
+    justify-content:space-between;
+    gap: 0px 42px;
 }
 
 .block-child-2{
@@ -86,6 +87,7 @@
     flex-direction: column;
     max-width: 268px;
     text-align: start;
+    padding-top: 35px;
     background: #FBFBFB;
 }
 .content-2{
@@ -134,7 +136,7 @@
     color: #3D3D3D;
 }
 .title-h{
-    margin-bottom: 15px;
+    padding-bottom: 15px;
     font-size: 30px;
     font-weight: 700;
 }
