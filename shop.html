@@ -3,12 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoping</title>
+    <title>Shop</title>
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/shop.css">
     <link rel="stylesheet" href="./css/fonts.css">
+    
 </head>
 <body>
+    <header>
+        <div class="main-header">
+            <nav class="main-header-nav">
+                <a class="main-header-logo" href="index.html">
+                    <img src="./img/logo.svg" alt="logo">
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#">Plant Care</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                </ul>
+                <a class="main-header-logout" href="login.html" target="_blank">
+                    <img class="main-header-img-out" src="./img/logout.svg" alt="Logout">
+                    <span class="main-header-login">Login</span>
+                </a>
+            </nav>
+        </div>
+    </header>
     <aside class="sidebar">
         <nav class="menu">
             <h2>Categories</h2>
@@ -31,7 +52,7 @@
     <header>
         <div class="container">   
             <nav class="nav">    
-                <ul>
+                <ul class="ul-nav-shop">
                     <li> <a href="shop.html">All Plants</a></li>
                     <li> <a href="#">New Arrivals</a></li>
                     <li> <a href="#">Sale</a></li>
