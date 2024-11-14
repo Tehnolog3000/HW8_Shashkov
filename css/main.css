@@ -78,3 +78,12 @@ section .right-side img {
     text-align: center;
     color: #FFFFFF;
 }
+.right-side{
+    position: relative;
+}
+.small-image{
+    position: absolute;
+    max-width: 135px;
+    max-height: 135px;
+    top: 300px; right: 320px; width: 135px; height: 135px;
+}
