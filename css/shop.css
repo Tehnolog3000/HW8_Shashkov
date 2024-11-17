@@ -20,7 +20,7 @@ background: #FBFBFB;
     width: 100%;
     margin-left: 18px;
     margin-top: 14px;
-    padding-bottom: 380px;
+    padding-bottom: 580px;
     
 }
 
@@ -47,13 +47,11 @@ aside nav li{
 
 
 
-/* Главный хедер */
+/* Второй хедер */
 
 .nav {
     text-align: right;
     height: 24px;
-    position: relative;
-    /* margin-bottom: 31px;     */
 }
 
 .ul-nav-shop {
@@ -65,14 +63,34 @@ aside nav li{
 }
 
 .ul-nav-shop li {
-    display: inline;
+    display: inline-block;
     margin-right: 25px;
     font-size: 15px;
     font-weight: 400;
     line-height: 16px;
-
-
 }
+
+.ul-nav-shop li a {
+    position: relative;
+    }
+
+    .ul-nav-shop li a.active {
+    font-size: 15px;
+    font-weight: 700;
+    color: #46A358;
+    
+}
+.ul-nav-shop li a.active::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #46A358;  
+}
+
+
 
 header nav label,
 header nav select {
@@ -88,29 +106,77 @@ header nav select{
 }
 /* Контейнер цветочки */
 
-.goods img{
-    background: #FBFBFB;
-    margin: 19px 4px;
-}
-
-
 
 .goods{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
     gap: 70px 30px;
-    
+    /* padding: 35px 4px; */
+    margin-top: 31px;
 }
 
 .product-card{
-    padding: 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    max-width: 258px;
+    position: relative;
+    border-top: 1px solid transparent;
 }
+
+
+.img-wrap{
+    position: relative;
+    background:#FBFBFB;
+    padding: 35px 4px;
+}
+
+.badge{
+    position: absolute;
+    top: 14px;
+    background: #46A358;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    padding: 7px 9px;
+    cursor: pointer;
+
+}
+
+.card-button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    bottom:55px;
+    opacity: 0;
+    transition: 0.3s;
+button{
+    padding: 8px;
+    background:#FBFBFB;
+    border-radius: 4px;
+}  
+}
+
+.img-btn{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.product-card:hover .card-button {
+    opacity: 1;
+}
+.product-card:hover{
+    opacity: 1;
+    border-top: 1px solid #46A358;
+    transition: 0.3s;
+}
+
 .product-name{
-    padding-top: 12px;
+    padding-top: 31px;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;

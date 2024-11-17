@@ -43,8 +43,7 @@
     left: 0;
     width: 100%; /* Ширина равна ширине элемента */
     height: 3px; /* Толщина линии */
-    background-color: #46A358; /* Цвет линии */
-    
+    background-color: #46A358; /* Цвет линии */  
 }
 
 .main-header-logout {
