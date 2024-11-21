@@ -3,8 +3,8 @@
     max-width: 1200px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 0.3px solid #46A35880
+    margin-bottom: 12px;
+    border-bottom: 0.3px solid #46A35880;
 }
 
 .main-header-nav {
@@ -20,15 +20,15 @@
 
 .main-header-nav ul {
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
 }
 
 .main-header-nav ul li {
-    margin: 0 25px; 
+    padding: 0 25px; 
     display: flex;
-    align-items: center; 
+    align-items: center;
+    height: 35px;
+    position: relative;
 }
 
 .main-header-nav ul li a {
@@ -36,15 +36,106 @@
     line-height: 1.5;
     position: relative; 
 }
-.main-header-nav ul li a.active::after {
+
+/* Добавляю полосочку внизу которая работает
+если страница активна, и при наведении курсором перед кликом */
+
+.main-header-nav > ul > li > a.active::after,
+.main-header-nav > ul > li:hover > a::after {
     content: "";
     position: absolute;
-    bottom: -25px; /* Расположение под текстом */
+    bottom: -25px; 
     left: 0;
-    width: 100%; /* Ширина равна ширине элемента */
-    height: 3px; /* Толщина линии */
-    background-color: #46A358; /* Цвет линии */  
+    height: 3px; 
+    background-color: #46A358; 
+    width: 100%;  
 }
+
+/* Добавляю жирность текста при активной и при наведении */
+.main-header-nav > ul > li > a.active,
+.main-header-nav > ul > li:hover > a {
+    font-weight:500;
+}
+
+/* Формируем два выпажающих меню одно из другого */
+.list-menu-1 {
+    display: flex;
+    flex-direction: column;
+    min-width: 188px;
+    position: absolute;
+    background: #EDF6EE;
+    transition: 0.3s;
+    right: 30px;
+    top: 56px;
+    visibility: hidden;
+    opacity: 0;
+}
+.list-menu-2 {
+    display: flex;
+    flex-direction: column;
+    min-width: 178px;
+    position: absolute;
+    background: #EDF6EE;
+    transition: 0.3s;
+    top: -105px;
+    left: calc(100% + 2px); 
+    visibility: hidden;
+    opacity: 0;
+}
+.list-menu-1 li a, 
+.list-menu-2 li a {
+    font-weight: 400;
+    padding: 7px 14px;
+    text-align: left;
+    font-size: 16px;
+    color: #3D3D3D;
+}
+/* показываем выпадающие потомки-списки при наведении на родителя */
+.main-menu > li:hover > .list-menu-1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* стилизуем последний пункт 1го выпадающего меню
+ и открываем из него второе при ховере */
+.last-li {
+    position: relative;
+}
+.last-li:hover > .list-menu-2 {
+    opacity: 1;
+    visibility: visible;
+}
+.last-li:hover {
+    background-color: #46A358; 
+    color: #FFFFFF; 
+}
+.last-li:hover > a {
+    color: #FFFFFF; 
+}
+/* меняем жирность шрифта последнего пункта 1 меню */
+.main-menu > li .last-li:hover > a {
+    font-weight: 700; 
+}
+
+/* стилизуем стрелочку */
+.last-li::after {
+    content: '>';
+    position: absolute;
+    right: 13px; 
+}
+.last-li:hover::after {
+    content: '<';
+    color: #FFFFFF;
+}
+
+/* Стили для ссылок в выпадающем меню */
+
+.main-header-nav ul .list-menu-1 > li, 
+.main-header-nav ul .list-menu-2 > li {
+    padding: 0; /* нужно обнулить паддинг чтоб не наследовался с главного меню */
+    z-index: 3;  /*делаем  зет индекс, чтоб меню перекрывало большую картинку цветка */
+}
+
 
 .main-header-logout {
     display: flex;

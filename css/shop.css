@@ -13,7 +13,6 @@ background: #FBFBFB;
 .sidebar{
     float: left;
     margin-left: 135px;
-    /* margin-right: 50px; */
     max-width: 310px;
 }
 .menu{

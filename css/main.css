@@ -87,3 +87,6 @@ section .right-side img {
     max-height: 135px;
     top: 300px; right: 320px; width: 135px; height: 135px;
 }
+.big-image{
+    z-index: 1;
+}
