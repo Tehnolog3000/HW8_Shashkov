@@ -80,7 +80,6 @@
     line-height: 22px;
     text-align: left;
 }
-
 .footer-block:not(:nth-child(3))::after {
     content: '';
     position: absolute;
