@@ -87,7 +87,8 @@
     top: 15px;
     width: 1px;
     height: 169px;
-    background: red;
+    background: rgba(70, 163, 88, 0.1);
+
 }
 
 .contact-block{
